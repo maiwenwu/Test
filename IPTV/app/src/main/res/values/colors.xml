@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#d42020</color>
+    <color name="colorPrimaryDark">#d42020</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorTextColor">#ffffff</color>
+    <color name="colorLinearLayout">#333232</color>
+    <color name="colorFileName">#1c1a1a</color>
+    <color name="colorText">#000000</color>
+    <color name="colorTextView">#403d3d</color>
+    <color name="colorTextLive">#4dffffff</color>
+    <color name="colorFileText">#8c8a8a</color>
+    <color name="colorHint">#991c1a1a</color>
+    <color name="colorBottomNavigation">#fefefe</color>
+    <color name="colorSearchHistory">#403d3d</color>
+</resources>

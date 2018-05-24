@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.excellence.iptv.activity.SearchFragment">
+
+    <LinearLayout
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_height_42dp"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_5dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <LinearLayout
+            android:id="@+id/ll_search"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/shape"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_search_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/padding_5dp"
+                android:hint="@string/hint"
+                android:background="@null"
+                android:textColorHint="@color/colorHint"
+                android:textSize="@dimen/text_size_14sp"
+                android:paddingLeft="@dimen/padding_10dp"
+                android:gravity="center_vertical"
+                />
+
+            <ImageView
+                android:id="@+id/iv_search"
+                android:layout_width="@dimen/layout_width_25dp"
+                android:layout_height="@dimen/layout_height_25dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/padding_10dp"
+                android:src="@drawable/ic_search" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_back"
+            android:background="@drawable/button_cancel"
+            android:text="@string/cancel"
+            android:textAllCaps="false"
+            android:layout_width="@dimen/layout_width_70dp"
+            android:layout_height="@dimen/layout_height_26dp"
+            android:layout_marginLeft="@dimen/padding_10dp"
+            android:layout_marginTop="@dimen/padding_top_3dp"
+            android:layout_marginRight="@dimen/layout_width_8dp"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+    </ListView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/linearLayout_height_56dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_left_20dp"
+            android:layout_marginLeft="@dimen/text_size_18sp"
+            android:textSize="@dimen/text_size_16sp"
+            android:textColor="@color/colorText"
+            android:text="@string/search_history"/>
+
+        <ImageView
+            android:id="@+id/iv_delete"
+            android:layout_width="@dimen/layout_height_30dp"
+            android:layout_height="@dimen/layout_height_30dp"
+            android:src="@drawable/ic_delete"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/padding_left_20dp"
+            android:layout_marginTop="@dimen/text_size_16sp"
+            />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.excellence.iptv.flowLayout.FlowLayout
+            android:id="@+id/flow_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorTextColor"
+            app:lineSpacing="@dimen/padding_10dp"
+            app:maxLine="3">
+
+        </com.excellence.iptv.flowLayout.FlowLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/layout_width_120dp"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/padding_15dp"
+    android:layout_marginTop="@dimen/padding_15dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_favorite_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/layout_height_75dp" />
+
+        <ImageView
+            android:id="@+id/iv_favorite_delete"
+            android:layout_width="@dimen/layout_height_20dp"
+            android:layout_height="@dimen/layout_height_20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:visibility="gone"
+            android:src="@drawable/icon_delete" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_pic">
+
+        <TextView
+            android:id="@+id/tv_favorite_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_10dp"
+            android:textSize="@dimen/text_size_14sp" />
+
+        <TextView
+        android:id="@+id/tv_favorite_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_10dp"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:textSize="@dimen/text_size_14sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

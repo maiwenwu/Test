@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.excellence.iptv.activity.PlayActivity">
+
+    <ImageView
+        android:id="@+id/iv_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_height_60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:src="@drawable/title_bg" />
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:src="@drawable/ic_back"
+            android:layout_width="@dimen/layout_height_30dp"
+            android:layout_height="@dimen/layout_height_30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/padding_left_20dp"/>
+
+        <TextView
+            android:id="@+id/tv_program_num"
+            android:layout_toRightOf="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_16sp"
+            android:textColor="@color/colorTextColor"
+            android:layout_marginLeft="@dimen/layout_marginTop_10dp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/tv_program_name"
+            android:layout_toRightOf="@+id/tv_program_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_16sp"
+            android:textColor="@color/colorTextColor"
+            android:layout_marginLeft="@dimen/layout_marginTop_10dp"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/layout_height_60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="@dimen/margin_10dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/infobar" />
+
+        <ImageView
+            android:id="@+id/iv_play"
+            android:src="@drawable/ic_play"
+            android:layout_width="@dimen/layout_height_20dp"
+            android:layout_height="@dimen/layout_height_20dp"
+            android:layout_marginLeft="@dimen/padding_left_20dp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/tv_program_time"
+            android:layout_toRightOf="@+id/iv_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_18sp"
+            android:textColor="@color/colorTextColor"
+            android:layout_marginLeft="@dimen/padding_10dp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/tv_program_epg"
+            android:layout_toRightOf="@+id/tv_program_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_18sp"
+            android:textColor="@color/colorTextColor"
+            android:layout_marginLeft="@dimen/layout_marginTop_10dp"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
