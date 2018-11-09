@@ -1,8 +1,5 @@
 hello world!
 dddddddddd
 xxxxxxxxxxxxx
-<<<<<<< HEAD
 ccccccc
-=======
 ddddddd
->>>>>>> develop
